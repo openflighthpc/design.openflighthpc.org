@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Platform Considerations: General &mdash; openFlightHPC-clusters  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Environment Considerations" href="../environment/considerations.html" />
+    <link rel="prev" title="Architecture Considerations: Storage Design" href="../architecture/considerations-storage-design.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/openflighthpc-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Architecture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/considerations.html">Architecture Considerations: General</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/considerations-network-design.html">Architecture Considerations: Network and Hardware Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/considerations-infrastructure-design.html">Architecture Considerations: Infrastructure Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/considerations-storage-design.html">Architecture Considerations: Storage Design</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Platform</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Platform Considerations: General</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#deployment-location">Deployment Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deployment-methods">Deployment Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#platform-management">Platform Management</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Environment</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../environment/considerations.html">Environment Considerations</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">openFlightHPC-clusters</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Platform Considerations: General</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/platform/considerations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="platform-considerations-general">
+<span id="platform-considerations"></span><h1>Platform Considerations: General<a class="headerlink" href="#platform-considerations-general" title="Permalink to this headline">¶</a></h1>
+<p>Platform considerations broadly cover how the chosen platform will be interacted with, namely:</p>
+<ul class="simple">
+<li>Where to host the platform</li>
+<li>How to deploy the resources</li>
+<li>How to manage nodes</li>
+</ul>
+<div class="section" id="deployment-location">
+<h2>Deployment Location<a class="headerlink" href="#deployment-location" title="Permalink to this headline">¶</a></h2>
+<p>With regards mainly to cloud platforms, the location of the resources is an important consideration. Cloud platforms offer their services in a variety of locations which allows for localisation of services and potential distribution of services across the globe.</p>
+<p>So when it comes to deciding on where to deploy resources it’s worth considering where the user base is located.</p>
+</div>
+<div class="section" id="deployment-methods">
+<h2>Deployment Methods<a class="headerlink" href="#deployment-methods" title="Permalink to this headline">¶</a></h2>
+<p>No matter what type of platform is being used for resources, there are multiple methods to deploy node configurations.</p>
+<p>Deployment methods can include:</p>
+<ul class="simple">
+<li><strong>Manual</strong> - Creating all deployment templates by hand for resources</li>
+<li><strong>Assisted</strong> - Using helper tools to generate templates and files for creating resources</li>
+</ul>
+<p>In most cases there is also a GUI and CLI tool that can be used to deploy to the platform. The ideal tool will suit the needs of the deployment team in ease-of-use and flexibility.</p>
+</div>
+<div class="section" id="platform-management">
+<h2>Platform Management<a class="headerlink" href="#platform-management" title="Permalink to this headline">¶</a></h2>
+<p>Management involves mainly the power management on the system. How the resources can be controlled remotely to check or change the power state.</p>
+<p>Remote power management tools can provide group-control helpers and other bulk tools to allow for easier maintenance preparation.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../environment/considerations.html" class="btn btn-neutral float-right" title="Environment Considerations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../architecture/considerations-storage-design.html" class="btn btn-neutral float-left" title="Architecture Considerations: Storage Design" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, openFlightHPC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
