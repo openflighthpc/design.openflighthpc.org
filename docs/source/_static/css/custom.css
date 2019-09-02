@@ -1,0 +1,7 @@
+.wy-side-nav-search {
+    background-color: #d2dae0;
+}
+
+.wy-side-nav-search>div.version {
+    color: rgb(255, 255, 255);
+}
