@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the openFlightHPC Clusters Knowledgebase!
-====================================================
+Welcome to the openFlightHPC Design Knowledgebase!
+==================================================
 
 This site contains documentation on general cluster considerations and best practices. It contains concept descriptions, implementation considerations and guidelines for developing a HPC stack. 
 
@@ -63,3 +63,4 @@ Table of Contents
    :name: environment
 
    environment/considerations
+
