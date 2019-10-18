@@ -85,7 +85,7 @@ html_theme_options = {
     'logo_only': True
 }
 
-html_logo = 'openflighthpc-logo.png'
+html_logo = 'design.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
